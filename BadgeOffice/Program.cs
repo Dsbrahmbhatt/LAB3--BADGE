@@ -59,11 +59,11 @@ Console.WriteLine("Walk Time: " + minutes + " minutes " + remaininingSeconds + "
 
 
 
-Console.WriteLine("===================================");
-Console.WriteLine("ETSU  STUDENT BADGE");
-Console.WriteLine("===================================");
-Console.WriteLine("Name".PadRight(10) + nameonBadge);
-Console.WriteLine("UserName".PadRight(10) + username);
-Console.WriteLine("ID".PadRight(10) + studentId + "-" + lastNameLength);
-Console.WriteLine("LOCKER".PadRight(10) + locker);
-Console.WriteLine("===================================");
+Console.WriteLine("==================================");
+Console.WriteLine("        ETSU  STUDENT BADGE");
+Console.WriteLine("==================================");
+Console.WriteLine("Name      ".PadRight(10) + nameonBadge);
+Console.WriteLine("UserName  ".PadRight(10) + username);
+Console.WriteLine("ID        ".PadRight(10) + studentId + "-" + lastNameLength);
+Console.WriteLine("LOCKER    ".PadRight(10) + locker);
+Console.WriteLine("==================================");
