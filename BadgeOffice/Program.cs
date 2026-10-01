@@ -16,3 +16,9 @@ System.Console.WriteLine("UserName: " + username);
 System.Console.WriteLine("Initials: " + initials);
 System.Console.WriteLine("Last Name Length: " + lastNameLength);
 
+//Part 2 
+int studentId = rng.Next(100000,1000000);
+int locker = rng.Next(1,501);
+
+System.Console.WriteLine("Student ID: " + studentId);
+System.Console.WriteLine("Locker: " + locker);
