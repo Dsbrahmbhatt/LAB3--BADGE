@@ -1,4 +1,6 @@
 ﻿//Part 1 
+using System.Security;
+
 Random rng= new Random();
 Console.Write("Full name: ");
 string fullName = Console.ReadLine();
@@ -22,3 +24,37 @@ int locker = rng.Next(1,501);
 
 System.Console.WriteLine("Student ID: " + studentId);
 System.Console.WriteLine("Locker: " + locker);
+
+
+//Part 3 
+
+Console.Write("Dorm X: ");
+double dormX = double.Parse(Console.ReadLine());
+
+Console.Write("Dorm Y: ");
+double dormY = double.Parse(Console.ReadLine());
+
+Console.Write("Class X: ");
+double ClassX = double.Parse(Console.ReadLine());
+
+Console.Write("Class X: ");
+double ClassY = double.Parse(Console.ReadLine());
+
+Console.Write("Walking Speed in feet per second: ");
+double Speed = double.Parse(Console.ReadLine());
+
+double changeInX = ClassX -dormX;
+double ChangeInY = ClassY - dormY;
+
+double distance = Math.Sqrt(Math.Pow(changeInX,2) + (Math.Pow(ChangeInY,2)));
+
+double exactSecond = distance/Speed;
+double totalSeconds= (int) exactSecond;
+
+double minutes = totalSeconds / 60 ;
+double remaininingSeconds = totalSeconds % 60;
+
+Console.WriteLine("Distance: " + Math.Round(distance, 1) + " feet");
+Console.WriteLine("Walk Time: " + minutes + " minutes " + remaininingSeconds + " Seconds ");
+
+
