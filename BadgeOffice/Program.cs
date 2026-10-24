@@ -37,7 +37,7 @@ double dormY = double.Parse(Console.ReadLine());
 Console.Write("Class X: ");
 double ClassX = double.Parse(Console.ReadLine());
 
-Console.Write("Class X: ");
+Console.Write("Class Y: ");
 double ClassY = double.Parse(Console.ReadLine());
 
 Console.Write("Walking Speed in feet per second: ");
@@ -49,21 +49,22 @@ double ChangeInY = ClassY - dormY;
 double distance = Math.Sqrt(Math.Pow(changeInX,2) + (Math.Pow(ChangeInY,2)));
 
 double exactSecond = distance/Speed;
-double totalSeconds= (int) exactSecond;
+int totalSeconds= (int) exactSecond;
 
-double minutes = totalSeconds / 60 ;
-double remaininingSeconds = totalSeconds % 60;
+int minutes = totalSeconds / 60 ;
+int remaininingSeconds = totalSeconds % 60;
 
 Console.WriteLine("Distance: " + Math.Round(distance, 1) + " feet");
 Console.WriteLine("Walk Time: " + minutes + " minutes " + remaininingSeconds + " Seconds ");
 
 
-
+int checkDigit = studentId % 9;
 Console.WriteLine("==================================");
 Console.WriteLine("        ETSU  STUDENT BADGE");
 Console.WriteLine("==================================");
 Console.WriteLine("Name      ".PadRight(10) + nameonBadge);
 Console.WriteLine("UserName  ".PadRight(10) + username);
-Console.WriteLine("ID        ".PadRight(10) + studentId + "-" + lastNameLength);
+Console.WriteLine("ID        ".PadRight(10) + studentId + "-" + checkDigit);
 Console.WriteLine("LOCKER    ".PadRight(10) + locker);
+Console.WriteLine("WALK    ".PadRight(10) + minutes + " min " + remaininingSeconds + " sec");
 Console.WriteLine("==================================");
